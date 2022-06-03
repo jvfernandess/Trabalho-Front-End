@@ -6,55 +6,11 @@
         {
             font-family: -apple-system, BlinkMacSystemFont, sans-serif;
         }
-        h1
+        #carouselExampleCaptions
         {
-            padding-top: 2vw;
-            text-align: center;
-        }
-        #felipe
-        {
-            margin-top: 5vw;
-            display: flex;
-        }
-        #felipefoto
-        {
-            border-radius: 100%;
-            width: 20vw;
-            height: 20vw;
-            margin-left: 0.5vw;
-        }
-        #felipetitulo
-        {
-            padding-left: 11vw;
-            padding-top: 3vw;
-        }
-        #felipetexto
-        {
-            width: 30vw;
-            text-align: justify;
-            padding-left: 2vw;
-        }
-        #joao
-        {
-            display: flex;
-            float: right;
-        }
-        #joaofoto
-        {
-            border-radius: 100%;
-            width: 20vw;
-            height: 20vw;
-        }
-        #joaotitulo
-        {
-            padding-top: 3vw;
-            padding-left: 6vw;
-        }
-        #joaotexto
-        {
-            width: 30vw;
-            text-align: justify;
-            padding-right: 2vw;
+            width: 70vw;
+            height: 40vw;
+            margin-top: 3vw;
         }
     </style>
     <meta charset="UTF-8">
@@ -89,24 +45,35 @@
         </nav>
     </header>
     <main>
-        <h1>Quem somos</h1>
-        <div id="felipe">
-            <img id="felipefoto" src="felipefoto.jpg">
-            <div>
-                <h4 id="felipetitulo">Felipe Sousa</h4>
-                <p id="felipetexto">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione, reiciendis dolore iste rerum consequatur laborum deleniti. Soluta amet nisi eveniet nihil id molestias! Expedita non ipsum ex. Sunt, explicabo expedita?</p>
+        <center>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="carrosel1.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Brad Pitt</h5>
+                  <p>"Se sou quem sou hoje, é graças aos produtos slamano."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="carrosel2.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Felipe Neto</h5>
+                  <p>"Os produtos slamano me tornaram uma pessoa melhor."</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="carrosel3.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Jimin do bts</h5>
+                  <p>"Desde que conheci a marca, sou apaixonado pelos produtos slamano."</p>
+                </div>
+              </div>
             </div>
-        </div>
-        <div id="joao">
-            <div>
-                <h4 id="joaotitulo">João Victor Fernandes</h4>
-                <p id="joaotexto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos minus aspernatur ducimus obcaecati! Veritatis dolorum dignissimos suscipit explicabo, quos sit recusandae quaerat ratione nam iste perferendis sint vero natus officiis!</p>
-            </div>
-            <img id="joaofoto" src="joaofoto.jpg">
-        </div>
-    </main>        
+          </div>
+        </center>
+    </main>
     <footer>
-        <br><br><br><br><br><br><br><br><br><br><br><br>
         <div class="footer-copyright text-center py-3">© 2022 Copyright:
             <a> Felipe Sousa e João Victor Fernandes</a>
         </div>
