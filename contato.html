@@ -125,21 +125,21 @@
                   <label for="estado">Estado: &nbsp;</label>
                     <select name="estado" id="estado">
                     <option value="">Estado...</option>
-                    <option value="a">Amazonas</option>
-                    <option value="m">Maranhão</option>
-                    <option value="s">São Paulo</option>
-                    <option value="t">Tocantins</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Tocantins">Tocantins</option>
                   </select>
                 </div>
                 <div class="input-group">
                   <label for="cidade">Cidade: &nbsp;</label>
                   <select name="cidade" id="cidade">
                     <option value="">Cidade...</option>
-                    <option value="gru">Guarulhos</option>
-                    <option value="m">Manaus</option>
-                    <option value="p">Palmas</option>
-                    <option value="s">São Luís</option>
-                    <option value="sp">São Paulo</option>
+                    <option value="Guarulhos">Guarulhos</option>
+                    <option value="Maranhão">Manaus</option>
+                    <option value="Paulo">Palmas</option>
+                    <option value="São Luís">São Luís</option>
+                    <option value="São Paulo">São Paulo</option>
                   </select>
                 </div>
                 </div>
@@ -174,7 +174,7 @@
     <script>
         function validar() {
           var nome = document.getElementById("nome");
-          var idade = document.getElement("idade");
+          var idade = document.getElementById("idade");
           var email = document.getElementById("email");
           var telefone = document.getElementById("telefone");
           var cep = document.getElementById("cep");
@@ -229,15 +229,23 @@
           }
           if (estado.value == "Amazonas" && cidade.value != "Manuas") {
               alert("A cidade informada não pertence ao Amazonas");
+              cidade.focus();
+              return;
           }
           if (estado.value == "Maranhão" && cidade.value != "São Luís") {
               alert("A cidade informada não pertence ao Maranhão");
+              cidade.focus();
+              return;
           }
           if (estado.value == "São Paulo" && cidade.value != "São Paulo") {
               alert("A cidade informada não pertence a São Paulo");
+              cidade.focus();
+              return;
           }
           if (estado.value == "Tocantins" && cidade.value != "Palmas") {
               alert("A cidade informada não pertence ao Tocantins");
+              cidade.focus();
+              return;
           }
           alert("Formulário enviado!");
 
